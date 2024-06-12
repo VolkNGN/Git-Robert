@@ -1,35 +1,25 @@
-const slides = document.getElementsByClassName("carousel__photo");
-const nextButton = document.getElementById("carousel-button-next");
-const prevButton = document.getElementById("carousel-button-prev");
-const dots = document.getElementsByClassName("dot");
-let position = 0;
-const numberOfSlides = slides.length;
+const carousel = document.querySelector('.carousel');
+const photos = carousel.querySelectorAll('.carousel__photo');
+const nextButton = carousel.querySelector('.carousel__button--next');
+const prevButton = carousel.querySelector('.carousel__button--prev');
 
-// fonction pour cacher tous les slides sauf le courant
-function hideAllSlides() {
-  for (const slide of slides) {
-    slide.classList.remove("carousel-item-visible");
-    slide.classList.add("carousel-item-hidden");
-  }
-}
+let currentPhotoIndex = 0;
 
-// fonction pour afficher le slide courant
-function showCurrentSlide() {
-  hideAllSlides();
-  slides[position].classList.add("carousel-item-visible");
-  slides[position].classList.remove("carousel-item-hidden");
-}
-
-// gestion des événements pour les boutons next et prev
-nextButton.addEventListener("click", () => {
-  position = (position + 1) % numberOfSlides;
-  showCurrentSlide();
+nextButton.addEventListener('click', () => {
+  currentPhotoIndex = (currentPhotoIndex + 1) % photos.length;
+  updateCarousel();
 });
 
-prevButton.addEventListener("click", () => {
-  position = (position - 1 + numberOfSlides) % numberOfSlides;
-  showCurrentSlide();
+prevButton.addEventListener('click', () => {
+  currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
+  updateCarousel();
 });
 
-// initialisation du carrousel
-showCurrentSlide();
+function updateCarousel() {
+  photos.forEach((photo, index) => {
+    photo.classList.toggle('initial', index === currentPhotoIndex);
+  });
+}
+
+// Initialize the carousel
+updateCarousel();

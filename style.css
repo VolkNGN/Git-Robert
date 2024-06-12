@@ -164,35 +164,74 @@
   }
 
   .carousel-wrapper {
-  /* Add a max-width to contain the carousel */
-  max-width: 800px;
-  margin: 40px auto;
-  /* Add some padding to create space around the carousel */
-  padding: 20px;
-  /* Add some border radius to give the carousel a rounded corner */
-  border-radius: 10px;
-  /* Add a box shadow to give the carousel some depth */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
-}
-
-.carousel {
-  transform-style: preserve-3d;
-}
-
-.carousel__photo {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  width: 50%;
-  margin: auto;
-  padding: 1rem 4rem;
-  z-index: 100;
-  transition: transform.5s, opacity.5s, z-index.5s;
-}
-
-.carousel__photo.initial {
-  opacity: 1;
-  position: relative;
-  z-index: 200;
-}
+    position: relative;
+    width: 300px;
+    height: 350px; /* adjust the height to your needs */
+    overflow: hidden;
+  }
+  
+  .carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .carousel__photo.initial {
+    opacity: 1;
+  }
+  
+  .carousel__button--next,
+  .carousel__button--prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .carousel__button--next {
+    right: 10px;
+  }
+  
+  .carousel__button--prev {
+    left: 10px;
+  }
+  
+  .carousel__button--next::before {
+    content: '›';
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .carousel__button--prev::before {
+    content: '‹';
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
