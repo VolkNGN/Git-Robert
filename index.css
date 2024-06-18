@@ -19,7 +19,6 @@
   flex: 1;
   justify-content: flex-start;
   padding: var(--padding-3xs);
-  debug_commit: 448091;
 }
 .background-image-wrapper {
   margin-left: -521px;
@@ -120,7 +119,6 @@
   flex-shrink: 0;
   align-items: flex-start;
   padding: var(--padding-55xl) var(--padding-7xl) var(--padding-45xl);
-  debug_commit: 448091;
   max-width: 245%;
 }
 .background-header,
