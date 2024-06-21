@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./index.css" />
     <link
       rel="stylesheet"
@@ -44,14 +43,14 @@
                   <div class="bouton-dpannage" id="boutonDpannageContainer">
                     <a class="dpannage">Dépannage</a>
                   </div>
-                  <div class="bouton-tutoriels" id="boutonTutorielsContainer">
+                  <div class="bouton-tutoriels">
                     <a class="rparations">Réparations</a>
                   </div>
-                  <div class="bouton-rparations" id="boutonRparationsContainer">
+                  <div class="bouton-rparations">
                     <a class="tutoriels">Tutoriels</a>
                   </div>
                   <div class="bouton-recyclage">
-                    <a class="recyclage" id="recyclageText">Recyclage</a>
+                    <a class="recyclage">Recyclage</a>
                   </div>
                 </nav>
               </div>
@@ -59,14 +58,12 @@
           </div>
         </header>
         <div class="hero-accueil">
-          <div class="image-11-wrapper">
-            <img
-              class="image-11-icon"
-              loading="lazy"
-              alt=""
-              src="./public/image-11@2x.png"
-            />
-          </div>
+          <img
+            class="image-11-icon"
+            loading="lazy"
+            alt=""
+            src="./public/image-11@2x.png"
+          />
         </div>
       </section>
       <section class="desktop-2">
@@ -232,7 +229,7 @@
                   src="./public/submit-background.svg"
                 />
 
-                <div class="submit1" id="submitText">Go !</div>
+                <div class="submit1">Go !</div>
               </div>
             </div>
           </div>
@@ -249,8 +246,8 @@
             >
             </iframe>
             <div class="informations">
-              <div class="contact-icons-wrapper">
-                <div class="contact-icons">
+              <div class="contact-icons">
+                <div class="location-icon-parent">
                   <img
                     class="location-icon"
                     loading="lazy"
@@ -272,8 +269,8 @@
                 </div>
                 <div class="phone-number">000111222333</div>
               </div>
-              <div class="contact-icons-parent">
-                <div class="contact-icons2">
+              <div class="contact-icons2">
+                <div class="email-icon-wrapper">
                   <img
                     class="email-icon"
                     loading="lazy"
@@ -291,7 +288,6 @@
               loading="lazy"
               alt=""
               src="./public/instagram.svg"
-              id="instagramIcon"
             />
 
             <div class="twitter-wrapper">
@@ -300,7 +296,6 @@
                 loading="lazy"
                 alt=""
                 src="./public/twitter.svg"
-                id="twitterIcon"
               />
             </div>
             <img
@@ -308,7 +303,6 @@
               loading="lazy"
               alt=""
               src="./public/facebook.svg"
-              id="facebookIcon"
             />
 
             <div class="youtube-wrapper">
@@ -317,7 +311,6 @@
                 loading="lazy"
                 alt=""
                 src="./public/youtube.svg"
-                id="youtubeIcon"
               />
             </div>
           </div>
@@ -327,18 +320,12 @@
         <div class="left-side-hero">
           <div class="left-side1">
             <div class="certified-image">
-              <div class="certified-image-inner">
-                <div class="frame-wrapper">
-                  <div class="image-17-wrapper">
-                    <img
-                      class="image-17-icon"
-                      loading="lazy"
-                      alt=""
-                      src="./public/image-17@2x.png"
-                    />
-                  </div>
-                </div>
-              </div>
+              <img
+                class="image-17-icon"
+                loading="lazy"
+                alt=""
+                src="./public/image-17@2x.png"
+              />
             </div>
           </div>
         </div>
@@ -346,23 +333,19 @@
           <div class="hero-footer">
             <h1 class="une-entreprise-certifie">Une entreprise certifiée !</h1>
           </div>
-          <div class="inner-image-container-wrapper">
-            <div class="inner-image-container">
-              <div class="image-16-wrapper">
-                <img
-                  class="image-16-icon"
-                  loading="lazy"
-                  alt=""
-                  src="./public/image-16@2x.png"
-                />
-              </div>
-            </div>
+          <div class="image-16-wrapper">
+            <img
+              class="image-16-icon"
+              loading="lazy"
+              alt=""
+              src="./public/image-16@2x.png"
+            />
           </div>
         </div>
       </section>
       <footer class="footer">
-        <div class="social-icons-wrapper">
-          <div class="social-icons">
+        <div class="footer-inner">
+          <div class="frame-group">
             <div class="robert-mnagers-02-03-04-05-06-wrapper">
               <div class="robert-mnagers-02-03-04-05-06-container">
                 <span>
@@ -414,7 +397,7 @@
         </div>
         <img class="base-line-icon" alt="" src="./public/base-line@2x.png" />
 
-        <div class="social-icons1">
+        <div class="social-icons">
           <img
             class="buttons-icon"
             loading="lazy"
@@ -449,35 +432,10 @@
       );
       if (boutonDpannageContainer) {
         boutonDpannageContainer.addEventListener("click", function (e) {
-          window.location.href = "./dpannage1.html";
+          // Please sync "Dépannage" to the project
         });
       }
-      
-      var boutonTutorielsContainer = document.getElementById(
-        "boutonTutorielsContainer"
-      );
-      if (boutonTutorielsContainer) {
-        boutonTutorielsContainer.addEventListener("click", function (e) {
-          window.location.href = "./rparations1.html";
-        });
-      }
-      
-      var boutonRparationsContainer = document.getElementById(
-        "boutonRparationsContainer"
-      );
-      if (boutonRparationsContainer) {
-        boutonRparationsContainer.addEventListener("click", function (e) {
-          window.location.href = "./tutoriels1.html";
-        });
-      }
-      
-      var recyclageText = document.getElementById("recyclageText");
-      if (recyclageText) {
-        recyclageText.addEventListener("click", function (e) {
-          window.location.href = "./recyclage1.html";
-        });
-      }
-      
+
       var image7 = document.getElementById("image7");
       if (image7) {
         image7.addEventListener("click", function () {
@@ -486,41 +444,6 @@
           );
         });
       }
-      
-      var submitText = document.getElementById("submitText");
-      if (submitText) {
-        submitText.addEventListener("click", function (e) {
-          window.location.href = "./confirmation.html";
-        });
-      }
-      
-      var instagramIcon = document.getElementById("instagramIcon");
-      if (instagramIcon) {
-        instagramIcon.addEventListener("click", function () {
-          window.open("www.instagram.com");
-        });
-      }
-      
-      var twitterIcon = document.getElementById("twitterIcon");
-      if (twitterIcon) {
-        twitterIcon.addEventListener("click", function () {
-          window.open("https://x.com/");
-        });
-      }
-      
-      var facebookIcon = document.getElementById("facebookIcon");
-      if (facebookIcon) {
-        facebookIcon.addEventListener("click", function () {
-          window.open("www.facebook.com");
-        });
-      }
-      
-      var youtubeIcon = document.getElementById("youtubeIcon");
-      if (youtubeIcon) {
-        youtubeIcon.addEventListener("click", function () {
-          window.open("www.youtube.com");
-        });
-      }
-      </script>
+    </script>
   </body>
 </html>
