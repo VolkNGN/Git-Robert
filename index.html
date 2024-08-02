@@ -1,449 +1,85 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
-
-    <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Khand:wght@500;600;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Alegreya Sans:wght@400;700&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-    />
-  </head>
-  <body>
-    <div class="index">
-      <section class="desktop-1">
-        <header class="background-header">
-          <div class="background-image-parent">
-            <div class="background-image">
-              <div class="image-13-wrapper">
-                <img
-                  class="image-13-icon"
-                  loading="lazy"
-                  alt=""
-                  src="./public/image-13@2x.png"
-                />
-              </div>
-            </div>
-            <div class="bandeau-accueil-wrapper">
-              <div class="bandeau-accueil">
-                <nav class="menu-buttons">
-                  <div class="bouton-dpannage" id="boutonDpannageContainer">
-                    <a class="dpannage">Dépannage</a>
-                  </div>
-                  <div class="bouton-tutoriels">
-                    <a class="rparations">Réparations</a>
-                  </div>
-                  <div class="bouton-rparations">
-                    <a class="tutoriels">Tutoriels</a>
-                  </div>
-                  <div class="bouton-recyclage">
-                    <a class="recyclage">Recyclage</a>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </header>
-        <div class="hero-accueil">
-          <img
-            class="image-11-icon"
-            loading="lazy"
-            alt=""
-            src="./public/image-11@2x.png"
-          />
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Ménagers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="images/logo.png" alt="Logo Robert Ménagers" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#depannage">Dépannage</a></li>
+                    <li><a href="#reparations">Réparations</a></li>
+                    <li><a href="#tutoriels">Tutoriels</a></li>
+                    <li><a href="#recyclage">Recyclage</a></li>
+                </ul>
+            </nav>
         </div>
-      </section>
-      <section class="desktop-2">
-        <div class="carousel1">
-          <div class="wrapper-slides-box">
-            <img
-              class="slides-box-icon"
-              loading="lazy"
-              alt=""
-              src="./public/slides-box.svg"
-            />
-          </div>
-          <div class="slides-navigation">
-            <div class="click-area">
-              <img
-                class="arrow-left-icon"
-                loading="lazy"
-                alt=""
-                src="./public/arrow-left.svg"
-              />
-            </div>
-            <div class="slide-indicator">
-              <img
-                class="dot-indictaor-1"
-                loading="lazy"
-                alt=""
-                src="./public/dot-indictaor--1.svg"
-              />
+    </header>
 
-              <img
-                class="dot-indictaor-2"
-                loading="lazy"
-                alt=""
-                src="./public/dot-indictaor--2.svg"
-              />
-
-              <img
-                class="dot-indictaor-3"
-                loading="lazy"
-                alt=""
-                src="./public/dot-indictaor--2.svg"
-              />
-
-              <img
-                class="dot-indictaor-4"
-                loading="lazy"
-                alt=""
-                src="./public/dot-indictaor--2.svg"
-              />
-            </div>
-            <div class="click-area1">
-              <img
-                class="arrow-right-icon"
-                loading="lazy"
-                alt=""
-                src="./public/arrow-right.svg"
-              />
-            </div>
-          </div>
+    <div class="main-content">
+        <div class="content-section">
+            <img src="images/main-image.png" alt="Contenu Principal" class="responsive-image">
         </div>
-      </section>
-      <section class="desktop-3">
-        <div class="ils-nous-ont-fait-confiance-wrapper">
-          <h1 class="ils-nous-ont">Ils nous ont fait confiance !</h1>
+        <div class="content-section">
+            <img src="images/image2.png" alt="Deuxième image" class="responsive-image">
         </div>
-        <div class="frame-parent">
-          <div class="image-8-wrapper">
-            <img
-              class="image-8-icon"
-              loading="lazy"
-              alt=""
-              src="./public/image-8@2x.png"
-            />
-          </div>
-          <div class="triple-image-wrapper">
-            <div class="triple-image">
-              <div class="double-image-wrapper">
-                <div class="double-image">
-                  <img
-                    class="image-7-icon"
-                    loading="lazy"
-                    alt=""
-                    src="./public/image-7@2x.png"
-                    id="image7"
-                  />
-                </div>
-              </div>
-              <div class="single-image">
-                <img
-                  class="image-14-icon"
-                  alt=""
-                  src="./public/image-14@2x.png"
-                />
-              </div>
-            </div>
-          </div>
+        <div class="content-section">
+            <img src="images/image3.png" alt="Troisième image" class="responsive-image">
         </div>
-      </section>
-      <section class="desktop-4">
-        <div class="ct-gauche">
-          <div class="fond-arrire">
-            <div class="fond-arrire-child"></div>
-            <div class="left-side">
-              <h1 class="contactez-nous">Contactez Nous !</h1>
-              <div class="input-fields">
-                <div class="nom-input-dark-2">
-                  <input class="background" type="text" />
-
-                  <div class="name">
-                    <div class="name1">Nom*</div>
-                  </div>
-                </div>
-                <div class="prnom-input-dark-2">
-                  <input class="background1" type="text" />
-
-                  <div class="email">
-                    <div class="email1">Prénom*</div>
-                  </div>
-                </div>
-                <div class="tlphone-input-dark-3">
-                  <input class="background2" type="text" />
-
-                  <div class="email2">
-                    <div class="e-mail">Téléphone*</div>
-                  </div>
-                </div>
-                <div class="email-input-dark-4">
-                  <input class="background3" type="text" />
-
-                  <div class="email3">
-                    <div class="email4">E-mail*</div>
-                  </div>
-                </div>
-                <div class="socit-input-dark-5">
-                  <input class="background4" type="text" />
-
-                  <div class="email5">
-                    <div class="email6">Société</div>
-                  </div>
-                </div>
-                <textarea
-                  class="message-input-dark-2"
-                  placeholder="Message*"
-                  rows="{8}"
-                  cols="{22}"
-                >
-                </textarea>
-                <div class="content">Obligatoire*</div>
-                <div class="newsletter-signup-dark">
-                  <div class="newsletter-signup-dark-inner">
-                    <div class="frame-child"></div>
-                  </div>
-                  <div class="minscrire-la">M’inscrire à la newsletter</div>
-                </div>
-              </div>
-            </div>
-            <div class="submit-wrapper">
-              <div class="submit">
-                <img
-                  class="submit-background-icon"
-                  loading="lazy"
-                  alt=""
-                  src="./public/submit-background.svg"
-                />
-
-                <div class="submit1">Go !</div>
-              </div>
-            </div>
-          </div>
+        <div class="content-section">
+            <img src="images/image4.png" alt="Quatrième image" class="responsive-image">
         </div>
-        <div class="ct-droite">
-          <div class="describtion">
-            <div class="introduction">
-              Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              vulputate libero et velit interdum, ac aliquet odio mattis.
-            </div>
-            <iframe
-              class="location"
-              src="https://www.google.fr/maps/@48.112958,-1.7152455,17z?entry=ttu"
-            >
-            </iframe>
-            <div class="informations">
-              <div class="contact-icons">
-                <div class="location-icon-parent">
-                  <img
-                    class="location-icon"
-                    loading="lazy"
-                    alt=""
-                    src="./public/location-icon.svg"
-                  />
-
-                  <div class="location-text">NYC, United States</div>
+        <div class="content-section form-section">
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="nom">Nom*</label>
+                    <input type="text" id="nom" name="nom" required>
                 </div>
-              </div>
-              <div class="contact-icons1">
-                <div class="phone-icon-wrapper">
-                  <img
-                    class="phone-icon"
-                    loading="lazy"
-                    alt=""
-                    src="./public/phone-icon.svg"
-                  />
+                <div class="form-group">
+                    <label for="prenom">Prénom*</label>
+                    <input type="text" id="prenom" name="prenom" required>
                 </div>
-                <div class="phone-number">000111222333</div>
-              </div>
-              <div class="contact-icons2">
-                <div class="email-icon-wrapper">
-                  <img
-                    class="email-icon"
-                    loading="lazy"
-                    alt=""
-                    src="./public/email-icon.svg"
-                  />
+                <div class="form-group">
+                    <label for="telephone">Téléphone*</label>
+                    <input type="tel" id="telephone" name="telephone" required>
                 </div>
-                <div class="email-text">somebody@gmail.com</div>
-              </div>
-            </div>
-          </div>
-          <div class="social-media-icons">
-            <img
-              class="instagram-icon"
-              loading="lazy"
-              alt=""
-              src="./public/instagram.svg"
-            />
-
-            <div class="twitter-wrapper">
-              <img
-                class="twitter-icon"
-                loading="lazy"
-                alt=""
-                src="./public/twitter.svg"
-              />
-            </div>
-            <img
-              class="facebook-icon"
-              loading="lazy"
-              alt=""
-              src="./public/facebook.svg"
-            />
-
-            <div class="youtube-wrapper">
-              <img
-                class="youtube-icon"
-                loading="lazy"
-                alt=""
-                src="./public/youtube.svg"
-              />
-            </div>
-          </div>
+                <div class="form-group">
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="societe">Société</label>
+                    <input type="text" id="societe" name="societe">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Go !</button>
+            </form>
         </div>
-      </section>
-      <section class="left-side-hero-parent">
-        <div class="left-side-hero">
-          <div class="left-side1">
-            <div class="certified-image">
-              <img
-                class="image-17-icon"
-                loading="lazy"
-                alt=""
-                src="./public/image-17@2x.png"
-              />
-            </div>
-          </div>
+        <div class="content-section">
+            <img src="images/image6.png" alt="Sixième image" class="responsive-image">
         </div>
-        <div class="texte-hero">
-          <div class="hero-footer">
-            <h1 class="une-entreprise-certifie">Une entreprise certifiée !</h1>
-          </div>
-          <div class="image-16-wrapper">
-            <img
-              class="image-16-icon"
-              loading="lazy"
-              alt=""
-              src="./public/image-16@2x.png"
-            />
-          </div>
-        </div>
-      </section>
-      <footer class="footer">
-        <div class="footer-inner">
-          <div class="frame-group">
-            <div class="robert-mnagers-02-03-04-05-06-wrapper">
-              <div class="robert-mnagers-02-03-04-05-06-container">
-                <span>
-                  <p class="robert-mnagers">Robert Ménagers</p>
-                  <p class="p">
-                    <b>02-03-04-05-06</b>
-                  </p>
-                </span>
-              </div>
-            </div>
-            <div class="footer-directions-wrapper">
-              <div class="footer-directions">
-                <div class="groupe-1">
-                  <div class="link-rows-one">
-                    <div class="nos-services">Nos Services</div>
-                  </div>
-                  <div class="link-rows-two">
-                    <div class="prendre-rendez-vous">Prendre rendez vous</div>
-                  </div>
-                  <div class="link-rows-three">
-                    <div class="auto-diagnostic">Auto-Diagnostic</div>
-                  </div>
-                </div>
-                <div class="groupe-2">
-                  <div class="propos-wrapper">
-                    <div class="propos">À Propos</div>
-                  </div>
-                  <div class="nos-engagements-wrapper">
-                    <div class="nos-engagements">Nos engagements</div>
-                  </div>
-                  <div class="pourquoi-rparer-wrapper">
-                    <div class="pourquoi-rparer">Pourquoi réparer ?</div>
-                  </div>
-                </div>
-                <div class="groupe-3">
-                  <div class="questions-frquentes-wrapper">
-                    <div class="questions-frquentes">Questions fréquentes.</div>
-                  </div>
-                  <div class="donner-mon-appareil-wrapper">
-                    <div class="donner-mon-appareil">donner mon appareil</div>
-                  </div>
-                  <div class="nous-contacter-wrapper">
-                    <div class="nous-contacter">nous contacter</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img class="base-line-icon" alt="" src="./public/base-line@2x.png" />
-
-        <div class="social-icons">
-          <img
-            class="buttons-icon"
-            loading="lazy"
-            alt=""
-            src="./public/buttons--icon@2x.png"
-          />
-
-          <img
-            class="buttons-icon1"
-            alt=""
-            src="./public/buttons--icon-1@2x.png"
-          />
-
-          <img
-            class="buttons-icon2"
-            alt=""
-            src="./public/buttons--icon-2@2x.png"
-          />
-
-          <img
-            class="buttons-icon3"
-            alt=""
-            src="./public/buttons--icon-3@2x.png"
-          />
-        </div>
-      </footer>
     </div>
 
-    <script>
-      var boutonDpannageContainer = document.getElementById(
-        "boutonDpannageContainer"
-      );
-      if (boutonDpannageContainer) {
-        boutonDpannageContainer.addEventListener("click", function (e) {
-          // Please sync "Dépannage" to the project
-        });
-      }
-
-      var image7 = document.getElementById("image7");
-      if (image7) {
-        image7.addEventListener("click", function () {
-          window.open(
-            "Robert Ménagers Dépannage Réparation Tutoriels Recyclage contactez nous au 02-03-04-05-06 !  Une équipe passionnée à votre service !  Ils nous ont fait confiance ! Ask Rob-ot !  Contactez Nous ! ou alors ! Nom* Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Prénom* Company name 315 W 36th St. NY 10018 Téléphone* E-mail* NYC, United States Société 000111222333 somebody@gmail.com Message* Obligatoire* I would like to receive the newsletter. Go ! Une entreprise certifié ! Robert Ménagers 02-03-04-05-06 Nos Services À Propos Prendre rendez vous Nos engagements Questions fréquentes. Auto-Diagnostic Pourquoi réparer ? donner mon appareil nous contacter"
-          );
-        });
-      }
-    </script>
-  </body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>&copy; 2024 Robert Ménagers</p>
+                <p>Contact: 02-40-00-45-06</p>
+            </div>
+            <div class="footer-links">
+                <a href="#services">Nos Services</a>
+                <a href="#engagements">Nos engagements</a>
+                <a href="#dons">Donner mon appareil</a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
